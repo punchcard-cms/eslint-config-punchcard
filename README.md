@@ -1,4 +1,4 @@
-# eslint-config-punchcard
+# eslint-config-punchcard [![Build Status](https://travis-ci.org/punchcard-cms/eslint-config-punchcard.svg?branch=master)](https://travis-ci.org/punchcard-cms/eslint-config-punchcard)
 
 Punchcard CMS ESLint Config
 
