@@ -1,7 +1,7 @@
 module.exports = {
   'extends': [
-    'ibm/vanilla/configurations/vanilla',
-    'ibm/vanilla/rules/browser',
+    'punchcard/configurations/vanilla',
+    'punchcard/rules/browser',
   ],
   'env': {
     'browser': true,
