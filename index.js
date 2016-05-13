@@ -1,7 +1,7 @@
 module.exports = {
   'extends': [
     'defaults/configurations/airbnb/es6',
-    'rules/best-practices',
-    'rules/style',
+    'punchcard/rules/best-practices',
+    'punchcard/rules/style',
   ],
 };
