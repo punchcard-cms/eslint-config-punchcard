@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-punchcard",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Punchcard CMS JavaScript Style Guides",
   "main": "vanilla/configurations/vanilla.js",
   "scripts": {
