@@ -1,0 +1,40 @@
+{
+  "name": "eslint-config-punchcard",
+  "version": "0.1.0",
+  "description": "Punchcard CMS JavaScript Style Guides",
+  "main": "vanilla/configurations/vanilla.js",
+  "scripts": {
+    "test": "eslint index.js configurations rules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:punchcard-cms/eslint-config-punchcard.git"
+  },
+  "keywords": [
+    "code",
+    "checker",
+    "code",
+    "linter",
+    "code",
+    "standards",
+    "code",
+    "style",
+    "eslint-config",
+    "eslint",
+    "eslintconfig",
+    "lint",
+    "style",
+    "checker",
+    "style",
+    "linter"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "babel-eslint": "^6",
+    "eslint-config-defaults": "^9"
+  },
+  "devDependencies": {
+    "eslint": "^2"
+  }
+}
