@@ -33,7 +33,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "babel-eslint": "^6",
-    "eslint-config-defaults": "^9"
+    "eslint-config-defaults": "^10.0.0-alpha.1"
   },
   "devDependencies": {
     "eslint": "^2"
