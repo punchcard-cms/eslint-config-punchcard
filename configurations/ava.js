@@ -1,5 +1,8 @@
 module.exports = {
-  'extends': [
+  extends: [
     'punchcard/configurations/node',
   ],
+  parserOptions: {
+    sourceType: 'module',
+  },
 };
