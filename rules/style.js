@@ -32,7 +32,10 @@ module.exports = {
     }],
     'padded-blocks': [2, 'never'],
     'quote-props': [2, 'consistent'],
-    'space-before-keywords': [2, 'always'],
+    'keyword-spacing': [2, {
+      'before': true,
+      'after': true,
+    }],
     'space-unary-ops': [2, {
       'words': true,
       'nonwords': false,
@@ -40,6 +43,21 @@ module.exports = {
     'spaced-comment': [2, 'always', {
       'exceptions': ['-', '+', '/', '*'],
       'markers': ['=', '!'],
+    }],
+    'arrow-body-style': [2, 'always'],
+    'max-len': 0,
+    'newline-before-return': 2,
+    'object-property-newline': 2,
+    'valid-jsdoc': [2, {
+      'prefer': {
+        'return': 'returns',
+      },
+      'requireReturn': false,
+      'preferType': {
+        'String': 'string',
+        'Object': 'object',
+        'Array': 'array',
+      },
     }],
   },
 };
