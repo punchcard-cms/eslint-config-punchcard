@@ -1,6 +1,8 @@
 module.exports = {
   'extends': [
-    'punchcard/configurations/vanilla',
+    'defaults/configurations/airbnb/es5',
+    'punchcard/rules/best-practices',
+    'punchcard/rules/style',
     'punchcard/rules/browser',
   ],
   'env': {

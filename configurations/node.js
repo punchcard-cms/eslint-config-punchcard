@@ -1,13 +1,18 @@
 module.exports = {
-  'extends': [
-    'punchcard/configurations/vanilla',
+  extends: [
+    'defaults/configurations/airbnb/es6',
+    'punchcard/rules/best-practices',
+    'punchcard/rules/style',
     'punchcard/rules/node',
   ],
-  'env': {
-    'browser': false,
-    'node': true,
-    'amd': false,
-    'mocha': false,
-    'jasmine': false,
+  parserOptions: {
+    sourceType: 'script',
+  },
+  env: {
+    browser: false,
+    node: true,
+    amd: false,
+    mocha: false,
+    jasmine: false,
   },
 };
