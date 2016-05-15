@@ -1,0 +1,5 @@
+extends:
+  - defaults/configurations/airbnb/es6.js
+  - ./rules/best-practices.js
+  - ./rules/style.js
+  - ./rules/node.js
