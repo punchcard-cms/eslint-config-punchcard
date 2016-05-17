@@ -1,5 +1,5 @@
 module.exports = {
-  'extends': [
+  extends: [
     'defaults/configurations/airbnb/es5',
     'punchcard/rules/best-practices',
     'punchcard/rules/style',
@@ -9,7 +9,7 @@ module.exports = {
     ecmaVersion: 5,
     sourceType: 'script',
   },
-  'env': {
+  env: {
     browser: true,
     node: false,
     amd: false,
