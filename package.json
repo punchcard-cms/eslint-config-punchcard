@@ -1,14 +1,14 @@
 {
   "name": "eslint-config-punchcard",
-  "version": "1.0.1",
   "description": "Punchcard CMS JavaScript Style Guides",
   "main": "vanilla/configurations/vanilla.js",
   "scripts": {
-    "test": "eslint index.js configurations rules"
+    "test": "eslint index.js configurations rules",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:punchcard-cms/eslint-config-punchcard.git"
+    "url": "https://github.com/punchcard-cms/eslint-config-punchcard.git"
   },
   "keywords": [
     "code",
@@ -29,13 +29,57 @@
     "linter",
     "punchcard-cms"
   ],
-  "author": "",
+  "contributors": [
+    "Sam Richard <snugug@us.ibm.com>",
+    "Scott Nath <snath@us.ibm.com>"
+  ],
   "license": "Apache-2.0",
   "dependencies": {
     "babel-eslint": "^6",
     "eslint-config-defaults": "^10.0.0-alpha.1"
   },
   "devDependencies": {
-    "eslint": "^3.4.0"
+    "ava": "^0.16.0",
+    "coveralls": "^2.11.12",
+    "eslint": "^3.4.0",
+    "ghooks": "^1.3.2",
+    "nyc": "^8.1.0",
+    "punchcard-commit-msg": "^1.0.0",
+    "punchcard-semantic-release": "^2.0.1",
+    "tap-diff": "^0.1.1",
+    "semantic-release": "^4.3.5"
+  },
+  "engines": {
+    "node": "5.7"
+  },
+  "nyc": {
+    "exclude": [
+      "lib/api.js",
+      "lib/routes/api.js",
+      "lib/api/**/*",
+      "tests/**/*",
+      "config/**/*",
+      "public/**/*",
+      "bower_components/**/*",
+      "Gulpfile.js",
+      "coverage"
+    ]
+  },
+  "ava": {
+    "files": [
+      "tests/*.js",
+      "!tests/apis.js"
+    ],
+    "failFast": true,
+    "tap": true
+  },
+  "config": {
+    "ghooks": {
+      "commit-msg": "punchcard-commit-msg"
+    }
+  },
+  "release": {
+    "analyzeCommits": "punchcard-semantic-release/analyze",
+    "generateNotes": "punchcard-semantic-release/notes"
   }
 }

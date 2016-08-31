@@ -1,9 +1,17 @@
+sudo: false
 language: node_js
 node_js:
-- '5.7'
+  - '5.11'
 cache:
   directories:
-  - node_modules
+    - node_modules
+before_script:
+  - npm prune
+after_success:
+  - npm run coverage
+  - npm run semantic-release
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
 notifications:
-  slack:
-    secure: kK5lRumHV3oWZPWv3f1cFYv9C912iWtEYkWFdC0uJ/u7uREhN/G1J2Yx0yY86qhwuXDOMRMBhgsrSkjV2jKVVcrXSmPta5fMZm07JhH15euQKQrrr3qmA/8dE7zxOeBlEAH8ig8u6m53xmZrslewTZrJmfnyRv84/QMB/pK/9GXDI+m8QtsV8lEwKdM9BgWMxye59lHtCVz12lL6o6HbtNqY+QQcghmWw5Emm/WlhBCYJ9mFzucNUURPldGZLvy60klvrKk6F32LjUBZIGHIhGDPMtgwzh7QtEJE9AOfjQDDqmaT5xYpGxYxc3evvq7gMdMrqWRrHj9MBkPlc/zc/N9b+6/Ub0zoTk6wr0VpATZRGjuyZQpaA30RuuiXxwXhiQ24PyjiPxpRi7Nr8F9G5+eAIzvMCQNUxFs/11iCE2YzMGgaZuagi089oqqzDqP2BteFjgF/nm9ANmNCy5FgB5bWWS1yDX95moRgpo3xCpHJBTkTrx1TI2s6YpCgaxjE+agaewSgKnNxQ+Ag2095dyEOK5Lunic/0hfYcbSf0odtU4M/OVhpM+o/kZLgv0STLeemFV9QM0uTlnknhuBBLFPgx8Bf2fBim/90hUqQF1ujbk7prt+HwbeGiecnKVGp0a6HabuWcOHZGwn4RhbfM9VJ6u2uGBq7K+TeCG5nVAE=
+  slack: ibm-watson:UbKvONJ8OzcbxZrc8nXOg1We
