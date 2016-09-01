@@ -1,4 +1,4 @@
-# eslint-config-punchcard [![Build Status](https://travis-ci.org/punchcard-cms/eslint-config-punchcard.svg?branch=master)](https://travis-ci.org/punchcard-cms/eslint-config-punchcard)
+# eslint-config-punchcard [![Build Status](https://travis-ci.org/punchcard-cms/eslint-config-punchcard.svg?branch=master)](https://travis-ci.org/punchcard-cms/eslint-config-punchcard) [![Coverage Status](https://coveralls.io/repos/github/punchcard-cms/eslint-config-punchcard/badge.svg?branch=master)](https://coveralls.io/github/punchcard-cms/eslint-config-punchcard?branch=master)
 
 Punchcard CMS ESLint Config
 
@@ -216,7 +216,7 @@ function readFile(filename, callback) {
 if (DEBUG) { require('debug'); }                           /*error Unexpected require().*/
 
 // a require() in a switch statement is also flagged
-switch(x) { case '1': require('1'); break; }  
+switch(x) { case '1': require('1'); break; }
 ```
 
 ### Handle Callback Error
@@ -617,10 +617,10 @@ var foo = function() {
 // Not OK
 //////////////////////////////
 var foo = function() {
-  for (;;) { 
-    if (true) { 
-      if (true) { 
-        if (true) { 
+  for (;;) {
+    if (true) {
+      if (true) {
+        if (true) {
           if (true) {   /*error Blocks are nested too deeply (4).*/
 
           }
@@ -691,7 +691,7 @@ if (a) {  /*error Block must not be padded by blank lines.*/
 }         /*error Block must not be padded by blank lines.*/
 
 if (a) {  /*error Block must not be padded by blank lines.*/
-  
+
   b();
 
 }         /*error Block must not be padded by blank lines.*/
