@@ -4,7 +4,8 @@
   "main": "vanilla/configurations/vanilla.js",
   "scripts": {
     "test": "eslint index.js configurations rules",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "reparo": "reparo -b master"
   },
   "repository": {
     "type": "git",
@@ -46,11 +47,12 @@
     "nyc": "^8.1.0",
     "punchcard-commit-msg": "^1.0.0",
     "punchcard-semantic-release": "^2.0.1",
-    "tap-diff": "^0.1.1",
-    "semantic-release": "^4.3.5"
+    "reparo": "^1.1.1-0",
+    "semantic-release": "^4.3.5",
+    "tap-diff": "^0.1.1"
   },
   "engines": {
-    "node": "5.7"
+    "node": "^6"
   },
   "nyc": {
     "exclude": [
